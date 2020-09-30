@@ -1,7 +1,7 @@
 {
   "name": "sprint-13_murugov_0-iter",
   "version": "1.0.0",
-  "description": "",
+  "description": "express.js + mongodb",
   "main": "index.js",
   "scripts": {
     "start": "node app.js",
@@ -12,9 +12,11 @@
   "dependencies": {
     "express": "^4.17.1",
     "mongoose": "^5.10.5",
-    "validator": "^13.1.17"
+    "validator": "^13.1.17",
+    "body-parser": "^1.19.0"
   },
   "devDependencies": {
+    "body-parser": "^1.19.0",
     "eslint": "^7.9.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-plugin-import": "^2.22.1",

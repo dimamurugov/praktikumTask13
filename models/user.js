@@ -18,8 +18,8 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
     validate: {
-      validator: avatar => validator.isURL(avatar),
-      message: 'Не валидный адресс аватара'
+      validator: (avatar) => validator.isURL(avatar),
+      message: 'Не валидный адресс аватара',
     },
   },
 });

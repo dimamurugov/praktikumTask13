@@ -12,22 +12,22 @@ const cardSchema = new mongoose.Schema({
     type: String,
     required: true,
     validate: {
-      validator: avatar => validator.isURL(avatar),
-      message: 'Не валидный адресс пользователя'
+      validator: (avatar) => validator.isURL(avatar),
+      message: 'Не валидный адресс пользователя',
     },
   },
   owner: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'user',
-    required: true
+    required: true,
   },
   likes: [{
     type: mongoose.Schema.Types.ObjectId,
-    default: []
+    default: [],
   }],
   createAt: {
     type: Date,
-    default: Date.now
+    default: Date.now,
   },
 });
 
